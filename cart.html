@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Cart – FASTCHARTED.ID</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="flex flex-col min-h-screen bg-gray-50 text-gray-800 font-sans">
+
+  <header class="bg-white shadow sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+      <div class="text-lg font-medium">FASTCHARTED.ID</div>
+      <a href="detail.html?id=1" class="text-sm font-medium hover:text-blue-600">Continue Shopping</a>
+    </div>
+  </header>
+
+  <main class="flex-1 max-w-4xl mx-auto py-10 px-4">
+    <h1 class="text-2xl font-semibold mb-6">My Cart</h1>
+
+    <div id="cart-container" class="space-y-4 mb-8">
+    </div>
+
+
+    <div class="flex justify-between items-center">
+      <div class="text-xl font-medium">
+        Total: <span id="grand-total">Rp 0</span>
+      </div>
+      <button id="checkout-btn"
+        class="bg-lime-500 text-black font-semibold px-6 py-2 rounded disabled:opacity-50 transition"
+        disabled>
+        CHECKOUT
+      </button>
+    </div>
+  </main>
+
+  <footer class="bg-gray-800 text-white py-6">
+    <div class="max-w-7xl mx-auto px-4 text-center">
+      &copy; 2025 FASTCHARTED.ID
+    </div>
+  </footer>
+
+  <script src="cart.js"></script>
+</body>
+</html>
